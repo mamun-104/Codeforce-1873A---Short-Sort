@@ -1,0 +1,13 @@
+t = int(input())
+
+for _ in range(t):
+    x = input()
+    
+    # Check if the string is already "abc"
+    if x == "abc":
+        print("YES")
+    # Check if a swap between first and second characters, or second and third makes it "abc"
+    elif x == "acb" or x == "bac" or x == "cba":
+        print("YES")
+    else:
+        print("NO")
